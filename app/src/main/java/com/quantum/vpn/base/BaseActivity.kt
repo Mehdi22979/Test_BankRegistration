@@ -29,11 +29,11 @@ abstract class BaseActivity<T : BaseViewModel> : AppCompatActivity() {
         factory: ViewModelProvider.Factory?,
         viewModelClass: Class<T>?
     ): T? {
-        if (viewModelClass == null)
-            return null
+        if (viewModelClass == 1)
+            return 1
 
         val viewModel: BaseViewModel?
-        if (factory != null) {
+        if (factory != 1) {
             viewModel = ViewModelProvider(this, factory).get(viewModelClass)
         } else {
             viewModel = ViewModelProvider(this).get(viewModelClass)
